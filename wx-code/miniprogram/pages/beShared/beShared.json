@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "您的好友邀请您拼团",
+  "usingComponents": {
+    "countdown": "../../components/countdown/countdown",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

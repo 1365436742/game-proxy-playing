@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "AI 报考分析报告",
+  "styleIsolation": "shared",
+  "usingComponents": {
+    "t-tag": "tdesign-miniprogram/tag/tag",
+    "van-popup": "@vant/weapp/popup/index",
+    "card": "../../components/card/card",
+    "payPopup": "./components/payPopup/payPopup",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index"
+  }
+}

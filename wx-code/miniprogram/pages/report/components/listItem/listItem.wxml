@@ -1,0 +1,18 @@
+<view class="listItem" bind:tap="onDetailPage">
+  <view class="iconIcon">
+    <van-icon class-prefix="my-icon" name="{{item.kind === shopType.team?'duoren':'baogao1'}}" />
+  </view>
+  <view class="content">
+    <view class="title">
+      <view class="textTitle">{{item.title}}</view>
+      <van-tag wx:if="{{item.kind === shopType.team}}" round type="primary">拼团</van-tag>
+    </view>
+    <view class="desc">
+      <van-tag plain wx:if="{{item.report_status === reportType.finish}}" type="success">已完成</van-tag>
+      <van-tag plain wx:if="{{item.report_status === reportType.noPay}}">未支付</van-tag>
+      <van-tag plain wx:if="{{item.report_status === reportType.teaming}}" type="warning">拼团中</van-tag>
+      <van-tag plain wx:if="{{item.report_status === reportType.aiGenerate}}" type="primary">生成中</van-tag>
+      <van-icon class-prefix="my-icon" name="icon" />{{item.created_at}}
+    </view>
+  </view>
+</view>

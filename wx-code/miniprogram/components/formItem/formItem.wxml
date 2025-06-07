@@ -1,0 +1,11 @@
+<view class="formItem">
+  <view class="label {{  require && 'require'}}">
+    {{label}}
+    <t-tag wx:if="{{tagInfo}}" style="position: absolute;right: 0;" theme="primary" size="small">
+      {{tagInfo}}
+    </t-tag>
+  </view>
+  <view class="itemBorder">
+    <slot></slot>
+  </view>
+</view>

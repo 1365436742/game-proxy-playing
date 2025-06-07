@@ -1,0 +1,22 @@
+<wxs module="_">
+  module.exports.contain = function (arr, key) {
+    if (!arr) return false
+    return arr.indexOf(key) > -1
+  } 
+</wxs>
+<view class="subject">
+  <t-checkbox-group t-class="horizontal-box" value="{{ subjectValue }}" bind:change="onChange">
+    <view wx:for="{{subjectList}}" wx:key="index" class="card {{_.contain(subjectValue, index) ? 'card--active' : ''}}">
+      <t-icon wx:if="{{_.contain(subjectValue, index)}}" name="check" t-class="card__icon" ariaHidden="{{true}}" />
+      <t-checkbox t-class="checkbox-box" value="{{index}}" icon="none" borderless>
+        <view class="checkbox-item">
+          <van-icon custom-class="checkbox-item-icon" class-prefix="my-icon" name="{{item.icon}}" />
+          <view class="textInfo">
+            {{item.name}}
+          </view>
+        </view>
+      </t-checkbox>
+    </view>
+  </t-checkbox-group>
+</view>
+<view class="subjectErrorMessage van-field__error-message" wx:if="errorMessage">{{errorMessage}}</view>

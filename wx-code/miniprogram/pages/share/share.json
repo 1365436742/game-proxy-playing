@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "AI智能报考分析报告",
+  "usingComponents": {
+    "countdown": "../../components/countdown/countdown",
+    "van-button": "@vant/weapp/button/index"
+  }
+}

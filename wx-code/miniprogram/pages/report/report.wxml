@@ -1,0 +1,7 @@
+<block wx:if="{{reportList.length>0}}">
+  <listItem wx:for="{{reportList}}" wx:key="report_id" icon="{{item.kind === shopType.team?'duoren':''}}" item="{{item}}" />
+</block>
+<block wx:else>
+  <view style="height: 120rpx;"></view>
+  <van-empty description="暂无报告" />
+</block>

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'my-icon';
+  /* Project id 4135027 */
+  src: url('//at.alicdn.com/t/c/font_4135027_3edfcmtqa2g.woff2?t=1748782993347') format('woff2'),
+    url('//at.alicdn.com/t/c/font_4135027_3edfcmtqa2g.woff?t=1748782993347') format('woff'),
+    url('//at.alicdn.com/t/c/font_4135027_3edfcmtqa2g.ttf?t=1748782993347') format('truetype');
+}
+
+.my-icon {
+  font-family: "my-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-icon-baogao1:before {
+  content: "\e61f";
+}
+
+.my-icon-shoucang:before {
+  content: "\e603";
+}
+
+.my-icon-bangzhu:before {
+  content: "\e8c3";
+}
+
+.my-icon-qiandai:before {
+  content: "\e601";
+}
+
+.my-icon-minzhengtubiao1-46:before {
+  content: "\e63b";
+}
+
+.my-icon-weixin:before {
+  content: "\e600";
+}
+
+.my-icon-icon:before {
+  content: "\e65f";
+}
+
+.my-icon-zhengzhi:before {
+  content: "\e73b";
+}
+
+.my-icon-boshihouchuzhanshenqing:before {
+  content: "\e6cb";
+}
+
+.my-icon-wodedangxuan:before {
+  content: "\e607";
+}
+
+.my-icon-shengwujishu:before {
+  content: "\e628";
+}
+
+.my-icon-xihaopianhao:before {
+  content: "\e6d2";
+}
+
+.my-icon-shandian:before {
+  content: "\e8c5";
+}
+
+.my-icon-duoren:before {
+  content: "\e6fd";
+}
+
+.my-icon-baogao:before {
+  content: "\e62d";
+}
+
+.my-icon-dashuju:before {
+  content: "\e651";
+}
+
+.my-icon-zhengzhi1:before {
+  content: "\e656";
+}
+
+.my-icon-dunpaibaowei:before {
+  content: "\e6f0";
+}
+
+.my-icon-pdf:before {
+  content: "\e67a";
+}
+
+.my-icon-flask-full:before {
+  content: "\e889";
+}
+
+.my-icon-earth-full:before {
+  content: "\e9ee";
+}
+
+.my-icon-fenxiang:before {
+  content: "\e643";
+}
+
+.my-icon-wuli:before {
+  content: "\e686";
+}
+
+.my-icon-shouye-shouye:before {
+  content: "\e614";
+}
+
+.my-icon-xiazai_xiazai:before {
+  content: "\e616";
+}
+
+.my-icon-jieshao:before {
+  content: "\e609";
+}
+
+.my-icon-wode:before {
+  content: "\e602";
+}
+
+.my-icon-lianxiwomen:before {
+  content: "\e61d";
+}

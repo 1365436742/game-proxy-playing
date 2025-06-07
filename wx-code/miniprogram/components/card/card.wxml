@@ -1,0 +1,11 @@
+<view class="cardShow">
+  <view class="topContent" wx:if="{{title || iconName}}">
+    <!-- <image src="" mode=""/> -->
+    <view wx:if="{{iconName}}" class="iconWapper {{iconSize}}">
+      <van-icon class-prefix="my-icon" name="{{iconName}}" />
+    </view>
+    <view class="title">{{title}}</view>
+    <slot name="tag"></slot>
+  </view>
+  <slot></slot>
+</view>

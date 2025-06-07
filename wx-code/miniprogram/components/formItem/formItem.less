@@ -1,0 +1,13 @@
+.formItem {
+  padding-bottom: 25rpx;
+  .label {
+    position: relative;
+    font-size: 26rpx;
+    padding-bottom: 20rpx;
+
+    &.require::after {
+      content: "*";
+      color: red;
+    }
+  }
+}

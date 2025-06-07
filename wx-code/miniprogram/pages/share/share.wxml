@@ -1,0 +1,49 @@
+<view class="container">
+  <view class="card">
+    <view class="text-center">
+      <view class="subtitle">
+        <text>邀请好友一起拼团，享受超值优惠</text>
+      </view>
+    </view>
+
+    <view class="price-box">
+      <view class="current-price">¥{{moneyValues.team}}</view>
+      <view class="original-price">原价 ¥{{moneyValues.single}}</view>
+    </view>
+    <countdown wx:if="{{shareInfo.remaining_time}}" remainingTime="{{shareInfo.remaining_time}}" />
+    <view class="group-section">
+      <view class="group-count">已有{{shareInfo.team_success}}人拼团成功</view>
+      <view class="avatars-container">
+        <view class="avatar-wrapper">
+          <view class="avatar waiting">
+            <image class="avatar initiator" src="{{shareInfo.avatar || defaultAvatarUrl}}" />
+          </view>
+          <text class="avatar-label">发起人</text>
+        </view>
+        <view class="avatar-wrapper">
+          <view class="avatar waiting">
+            <text class="plus-icon">+</text>
+          </view>
+          <text class="avatar-label">等待加入</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="share-button">
+      <van-button open-type="{{shareInfo.share_id?'share':''}}" type="info" block bind:click="onNoShare">立即邀请好友参团</van-button>
+    </view>
+
+    <view class="rules-section">
+      <view class="rules-title">
+        <text>拼团规则</text>
+      </view>
+      <view class="rules-list">
+        <text class="rule-item">2人即可成团，享受优惠价格。</text>
+        <text class="rule-item">拼团有效期为12小时，超时未成团则单人自动成团。</text>
+        <text class="rule-item">成团后，系统将开始时生成AI志愿报告，可在我的报告中查看生成情况。</text>
+        <text class="rule-item">拼团成功后不支持退款。</text>
+        <text class="rule-item">每位用户最多可参与、发起最多5个拼团活动。</text>
+      </view>
+    </view>
+  </view>
+</view>

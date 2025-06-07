@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "AI 报考助手",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "form-item": "../../components/formItem/formItem",
+    "card": "../../components/card/card",
+    "subject": "./components/subject/subject",
+    "area": "./components/area/area"
+  }
+}

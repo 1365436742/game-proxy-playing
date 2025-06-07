@@ -1,0 +1,35 @@
+.areaForm {
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  height: 66rpx;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+
+  &.noValue {
+    color: #C7C7CD;
+  }
+
+  .arrow-down {
+    width: 13rpx;
+    height: 13rpx;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    right: 35rpx;
+    top: 50%;
+    transform: rotate(45deg) translate(0, -100%);
+  }
+}
+
+.areaFormErrorMessage {
+  &.van-field__error-message {
+    margin-top: 10rpx;
+    color: var(--field-error-message-color, #ee0a24);
+    display: block;
+    font-size: var(--field-error-message-text-font-size, 12px);
+    text-align: left;
+  }
+}

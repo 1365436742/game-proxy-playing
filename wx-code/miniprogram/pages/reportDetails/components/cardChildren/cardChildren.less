@@ -1,0 +1,61 @@
+.cardChildren {
+  box-sizing: border-box;
+  padding: 25rpx;
+  background-color: rgba(25, 137, 250, 0.1);
+  border-radius: 15rpx;
+  margin-top: 15rpx;
+
+  .title {
+    display: flex;
+    align-items: center;
+
+    .my-icon {
+      font-size: 16px;
+      color: #1989fa;
+    }
+
+    .titleText {
+      font-size: 28rpx;
+      font-weight: 600;
+      margin-left: 5rpx;
+      flex: 1;
+      width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #1989fa;
+    }
+  }
+
+  .descText {
+    font-size: 26rpx;
+    margin: 10rpx 0;
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+
+    .itemResult {
+      display: flex;
+      align-items: center;
+      margin-right: 18rpx;
+
+      &.big {
+        .my-icon {
+          font-size: 18px;
+        }
+      }
+
+      .my-icon {
+        font-size: 15px;
+        color: #1989fa;
+      }
+
+      .text {
+        font-size: 26rpx;
+        padding-left: 8rpx;
+      }
+    }
+  }
+}

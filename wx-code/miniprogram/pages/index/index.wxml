@@ -1,0 +1,10 @@
+<card wx:for="{{cardList}}" wx:for-item="cardInfo" wx:key="title" title='{{cardInfo.title}}' iconName="{{cardInfo.iconName}}">
+  <form-item wx:for="{{cardInfo.formList}}" id="{{item.key}}" wx:key="key" label="{{item.label}}" require="{{item.require}}" tagInfo="{{item.key === 'subject'? formData.subject.length +'/3':''}}">
+    <area wx:if="{{item.componentType === 'area'}}" data-item="{{item.key}}" cityValue="{{formData[item.key]}}" bind:change="onChangeForm" error-message="{{errorInfo[item.key]}}" />
+    <subject wx:elif="{{item.componentType === 'subject'}}" subjectValue="{{ formData[item.key] }}" data-item="{{item.key}}" error-message="{{errorInfo[item.key]}}" bind:change="onChangeForm" />
+    <van-field wx:else data-item="{{item.key}}" custom-class="inputFormItem" input-class="inputWapper" type="{{item.type}}" value="{{ formData[item.key] }}" bind:input="onChangeForm" placeholder="{{item.placeholder}}" error-message="{{errorInfo[item.key]}}" border="{{ false }}" />
+  </form-item>
+</card>
+<view class="submitAction" bind:tap="onNoPayPage">
+  <van-button type="info" block>一键生成报考报告</van-button>
+</view>

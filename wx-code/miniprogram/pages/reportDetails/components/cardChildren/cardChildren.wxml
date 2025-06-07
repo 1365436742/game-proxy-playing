@@ -1,0 +1,28 @@
+<wxs module="_">
+  module.exports.join = function (arr) {
+    return arr.join('、')
+  } 
+</wxs>
+<view class="cardChildren">
+  <view class="title">
+    <van-icon class-prefix="my-icon" name="zhengzhi" />
+    <view class="titleText">{{item.school_name}}</view>
+  </view>
+  <view wx:if="{{item.recommended_majors && item.recommended_majors.length>0}}" class="descText">
+    推荐专业：{{_.join(item.recommended_majors)}}
+  </view>
+  <view wx:if="{{item.school_info}}" class="descText">
+    学校情况：{{item.school_info}}
+  </view>
+  <view wx:if="{{item.school_profile}}" class="descText">
+    学校简介：{{item.school_profile}}
+  </view>
+
+  <view class="result">
+    <view class="itemResult" wx:if="{{item.monthly_salary}}">
+      <van-icon class-prefix="my-icon" name="qiandai" />
+      <view class="text">平均薪资：{{item.monthly_salary}}</view>
+    </view>
+  </view>
+
+</view>

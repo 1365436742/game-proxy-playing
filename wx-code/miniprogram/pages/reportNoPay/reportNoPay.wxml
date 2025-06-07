@@ -1,0 +1,62 @@
+<view class="cardMoney">
+  <view class="tagText">限时特惠</view>
+  <view class="title">解锁完整报考分析报告</view>
+  <view class="moneyOld">原价：￥{{moneyValues.single}}</view>
+  <view class="money">
+    ￥{{moneyValues.team}}<text class="unitText">起</text>
+  </view>
+  <view class="acitonInfo">
+    <view class="peopleTeam">
+      <van-icon class-prefix="my-icon" name="duoren" />
+      <view class="text">2人拼团仅需￥{{moneyValues.team}}</view>
+    </view>
+  </view>
+</view>
+<card title='冲击院校推荐' iconName="shandian" iconSize="middle">
+  <view class="childrenCard">
+    <view class="school">
+      推荐学校
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+    </view>
+    <view class="school">
+      推荐专业 <t-tag variant="light">待解锁</t-tag>
+    </view>
+  </view>
+</card>
+
+
+<card title='保底院校' iconName="shandian" iconSize="minzhengtubiao1-46">
+  <view class="childrenCard">
+    <view class="school">
+      推荐学校
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+    </view>
+    <view class="school">
+      推荐专业 <t-tag variant="light">待解锁</t-tag>
+    </view>
+  </view>
+</card>
+
+<card title='稳妥院校推荐' iconName="dunpaibaowei" iconSize="big">
+  <view class="childrenCard">
+    <view class="school">
+      推荐学校
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+      <t-tag variant="light">待解锁</t-tag>
+    </view>
+    <view class="school">
+      推荐专业 <t-tag variant="light">待解锁</t-tag>
+    </view>
+  </view>
+</card>
+<van-popup custom-style="border-radius: 15rpx;" show="{{ show }}" bind:close="onClose">
+  <payPopup bind:cancel="onClose" bind:pay="onPay"></payPopup>
+</van-popup>
+<view class="submitAction" bind:tap="showPopup">
+  <van-button type="info" block>立即解锁完整报考</van-button>
+</view>

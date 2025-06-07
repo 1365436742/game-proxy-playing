@@ -1,0 +1,29 @@
+<view class="report-card">
+  <view class="report-title-bar">
+    <view>根据考生分数</view>
+    <view>一键生成AI智能报考分析报告</view>
+  </view>
+  <view class="report-section">
+    <view class="report-section-title">报考院校推荐</view>
+    <view class="report-section-desc">
+      基于AI大模型，根据考生分数、基本信息推荐适合院校，推荐稳妥、保底、冲刺三个档次报考参考院校，帮助考生报考。
+    </view>
+    <view class="report-section-title">匹配专业推荐</view>
+    <view class="report-section-desc">
+      基于AI大模型，根据考生的个人爱好、倾向专业，推荐所匹配院校的具体专业辅助考生选取合适专业。
+    </view>
+    <view class="report-section-title">就业前景分析</view>
+    <view class="report-section-desc">
+      基于大数据，根据推荐的院校、专业详细分析所推荐的专业毕业后的就业前景，报考专业发展趋势，毕业后平均薪资等。
+    </view>
+  </view>
+</view>
+
+<view class="price-card">
+  <view class="price-group">拼团价 ￥{{moneyValues.team}}</view>
+  <view class="price-origin">原价￥{{moneyValues.single}}</view>
+  <countdown wx:if="{{beShareInfo.remaining_time}}" remainingTime="{{beShareInfo.remaining_time}}" />
+</view>
+<view class="group-btn" bind:tap="onToCreatReport">
+  <van-button type="info" block>立即拼团生报告</van-button>
+</view>

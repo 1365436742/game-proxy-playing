@@ -1,0 +1,15 @@
+<card wx:if="{{reportDetail.aspirational_schools && reportDetail.aspirational_schools.length}}" title='冲击院校推荐' iconName="shandian" iconSize="middle">
+  <view class="cardWapper">
+    <cardChildren wx:for="{{reportDetail.aspirational_schools}}" item="{{item}}" />
+  </view>
+</card>
+<card wx:if="{{reportDetail.target_schools && reportDetail.target_schools.length}}" title='稳妥院校推荐' iconName="dunpaibaowei" iconSize="big">
+  <view class="cardWapper">
+    <cardChildren wx:for="{{reportDetail.target_schools}}" item="{{item}}" />
+  </view>
+</card>
+<card wx:if="{{reportDetail.safety_schools && reportDetail.safety_schools.length}}" title='保底院校' iconName="minzhengtubiao1-46" iconSize="big">
+  <view class="cardWapper">
+    <cardChildren wx:for="{{reportDetail.safety_schools}}" item="{{item}}" />
+  </view>
+</card>

@@ -1,0 +1,12 @@
+<view class="timer-section">
+  <view class="timer-label">
+    <text>剩余时间</text>
+  </view>
+  <view class="timer-display">
+    <view class="timer-box">{{hours}}</view>
+    <view class="timer-separator">:</view>
+    <view class="timer-box">{{minutes}}</view>
+    <view class="timer-separator">:</view>
+    <view class="timer-box">{{seconds}}</view>
+  </view>
+</view>

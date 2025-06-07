@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "报考分析报告",
+  "usingComponents": {
+    "card": "../../components/card/card",
+    "cardChildren": "./components/cardChildren/cardChildren"
+  }
+}

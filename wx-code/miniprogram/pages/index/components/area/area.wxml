@@ -1,0 +1,14 @@
+<view class="areaForm {{!cityValue && 'noValue'}}" bind:tap="onAreaPicker">
+  {{ cityValue?cityValue:'请选择省份'}}
+  <view class="arrow-down"></view>
+</view>
+<view class="areaFormErrorMessage van-field__error-message" wx:if="errorMessage">{{errorMessage}}</view>
+<t-picker visible="{{cityVisible}}" value="{{cityValue}}" data-key="city" title="选择地区" cancelBtn="取消" confirmBtn="确认" usingCustomNavbar="{{false}}" bindchange="onPickerChange" bindcancel="onPickerCancel" bindclose="onPickerCancel">
+  <t-picker-item options="{{citys}}" format="{{formatter}}">
+    <block wx:for="{{citys}}" wx:key="index" wx:for-item="option">
+      <view wx:if="{{option.tag}}" slot="label-suffix--{{index}}" class="label-suffix">
+        <t-tag size="small" theme="primary">{{option.tag}}</t-tag>
+      </view>
+    </block>
+  </t-picker-item>
+</t-picker>

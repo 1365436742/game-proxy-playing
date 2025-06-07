@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的报告",
+  "usingComponents": {
+    "van-empty": "@vant/weapp/empty/index",
+    "listItem": "./components/listItem/listItem"
+  }
+}

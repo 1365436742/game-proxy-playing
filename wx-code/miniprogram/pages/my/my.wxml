@@ -1,0 +1,43 @@
+<view style="height: 20rpx;"></view>
+<card>
+  <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{userInfo.avatar}}"></image>
+  </button>
+  <view class="nickName">
+    <input type="nickname" value="{{userInfo.username}}" bindchange="onChangeNickName" placeholder="请输入昵称" />
+  </view>
+  <view class="infoShow">
+
+    <view class="content">
+      <view class="number">{{userInfo.report}}</view>
+      <view class="text">报告数</view>
+    </view>
+
+    <view class="content">
+      <view class="number">{{userInfo.team}}</view>
+      <view class="text">拼团数</view>
+    </view>
+
+  </view>
+</card>
+
+<view class="listInfo">
+  <t-cell title="帮助中心" hover arrow bind:click="onHelpPage">
+    <view class="leftIcon middle" slot='left-icon'>
+      <van-icon class-prefix="my-icon" name="bangzhu" />
+    </view>
+  </t-cell>
+  <button class="btnDefault" open-type="contact" bindcontact="handleContact" session-from="sessionFrom">
+    <t-cell title="意见反馈" hover arrow>
+      <view class="leftIcon big" slot='left-icon'>
+        <van-icon class-prefix="my-icon" name="weixin" />
+      </view>
+    </t-cell>
+  </button>
+
+  <t-cell title="联系我们" hover arrow bind:click="makePhoneCall">
+    <view class="leftIcon" slot='left-icon'>
+      <van-icon class-prefix="my-icon" name="shoucang" />
+    </view>
+  </t-cell>
+</view>

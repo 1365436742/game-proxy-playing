@@ -1,0 +1,96 @@
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 25rpx;
+
+  &::after {
+    border: none;
+  }
+}
+
+.nickName {
+  padding-top: 25rpx;
+  text-align: center;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+
+.infoShow {
+  padding-top: 45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    .number {
+      font-size: 28rpx;
+      font-weight: 600;
+      color: #1989fa;
+    }
+
+    .text {
+      font-size: 28rpx;
+      padding-left: 15rpx;
+    }
+  }
+}
+
+.listInfo {
+  width: 92%;
+  margin: 50rpx auto 0;
+  border-radius: 15rpx;
+  overflow: hidden;
+  box-shadow: 1px 1px 8px #cccccc;
+
+  .btnDefault {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+
+    &::after {
+      border-radius: 0;
+      border: none;
+    }
+  }
+
+  .leftIcon {
+    background-color: rgba(25, 137, 250, 0.25);
+    padding: 0 10rpx;
+    border-radius: 12rpx;
+    width: 55rpx;
+    height: 55rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.big {
+      .my-icon {
+        font-size: 16px;
+        color: #1989fa;
+      }
+    }
+
+    &.middle {
+      .my-icon {
+        font-size: 14px;
+        color: #1989fa;
+      }
+    }
+
+    .my-icon {
+      font-size: 12px;
+      color: #1989fa;
+    }
+  }
+}
