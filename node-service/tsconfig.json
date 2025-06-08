@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["es6", "es7", "es2017", "dom"],
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": true,
+    "declaration": false,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "esm": true
+  }
+}
