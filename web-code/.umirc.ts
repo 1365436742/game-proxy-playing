@@ -7,7 +7,7 @@ export default defineConfig({
   initialState: {},
   request: {},
   layout: {
-    title: '@umijs/max',
+    title: '陪玩平台',
   },
   routes: [
     {
@@ -15,21 +15,35 @@ export default defineConfig({
       redirect: '/home',
     },
     {
-      name: '首页',
+      name: '基本信息管理',
       path: '/home',
       component: './Home',
     },
     {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
+      name: '陪玩管理',
+      path: 'playUser',
+      component: './PlayUser',
     },
     {
-      name: ' CRUD 示例',
-      path: '/table',
+      name: '投诉管理',
+      path: '/complaint',
+      component: './Table',
+    },
+    {
+      name: '工资统计',
+      path: '/moneyTotal',
+      component: './Table',
+    },
+    {
+      name: '数据分析',
+      path: '/DataAnalysis',
+      component: './Table',
+    },
+    {
+      name: '用户管理',
+      path: '/user',
       component: './Table',
     },
   ],
   npmClient: 'yarn',
 });
-
