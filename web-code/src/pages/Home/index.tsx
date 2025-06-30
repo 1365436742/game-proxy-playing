@@ -1,15 +1,17 @@
-import Guide from '@/components/Guide';
-import { trim } from '@/utils/format';
 import { PageContainer } from '@ant-design/pro-components';
-import { useModel } from '@umijs/max';
-import styles from './index.less';
+import { Divider } from 'antd';
+import AdImage from './components/AdImage';
+import TagsPlay from './components/TagsPlay';
+import './index.less';
 
 const HomePage: React.FC = () => {
-  const { name } = useModel('global');
   return (
     <PageContainer ghost>
-      <div className={styles.container}>
-        <Guide name={trim(name)} />
+      <div className="">
+        <Divider orientation="left">游戏标签管理</Divider>
+        <TagsPlay></TagsPlay>
+        <Divider orientation="left">广告轮播管理</Divider>
+        <AdImage></AdImage>
       </div>
     </PageContainer>
   );
