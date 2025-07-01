@@ -9,6 +9,7 @@ const users = [
     workerTime: '18:00:00-20:00:00',
     monthNumber: 50,
     monthWorkTime: 8,
+    complaintNumber: 2,
     monthMoney: 5000,
   },
   { id: 1, name: 'Fish', gender: 'FEMALE' },
