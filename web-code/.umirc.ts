@@ -25,14 +25,14 @@ export default defineConfig({
       component: './PlayUser',
     },
     {
-      name: '投诉管理',
-      path: '/complaint',
-      component: './Table',
+      name: '订单信息',
+      path: 'orderList',
+      component: './OrderList',
     },
     {
-      name: '工资统计',
-      path: '/moneyTotal',
-      component: './Table',
+      name: '投诉管理',
+      path: '/complaint',
+      component: './Complaint',
     },
     {
       name: '数据分析',
