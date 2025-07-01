@@ -44,11 +44,7 @@ const TableList: React.FC<unknown> = () => {
       valueType: 'option',
       render: (_, record) => (
         <>
-          <a>投诉原因</a>
-          <Divider type="vertical" />
-          <a>订单信息</a>
-          <Divider type="vertical" />
-          <a>反馈</a>
+          <a>退款</a>
         </>
       ),
     },
