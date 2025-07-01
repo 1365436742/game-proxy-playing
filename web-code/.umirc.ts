@@ -35,14 +35,9 @@ export default defineConfig({
       component: './Complaint',
     },
     {
-      name: '数据分析',
-      path: '/DataAnalysis',
-      component: './Table',
-    },
-    {
       name: '用户管理',
       path: '/user',
-      component: './Table',
+      component: './User',
     },
   ],
   npmClient: 'yarn',
