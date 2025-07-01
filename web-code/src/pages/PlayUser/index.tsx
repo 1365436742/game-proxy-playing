@@ -60,12 +60,19 @@ const TableList: React.FC<unknown> = () => {
       hideInSearch: true,
     },
     {
+      title: '本月投诉数量',
+      dataIndex: 'complaintNumber',
+      hideInSearch: true,
+    },
+    {
       title: '操作',
       dataIndex: 'option',
       valueType: 'option',
       render: (_, record) => (
         <>
           <a>签约文件</a>
+          <Divider type="vertical" />
+          <a>游戏介绍</a>
           <Divider type="vertical" />
           <a>冻结账户</a>
         </>
@@ -79,8 +86,9 @@ const TableList: React.FC<unknown> = () => {
         actionRef={actionRef}
         rowKey="id"
         toolBarRender={() => [
-          <Button key="1" type="primary">
-            新建
+          <Button key="1">新建</Button>,
+          <Button key="2" type="primary">
+            工资导出
           </Button>,
         ]}
         request={async (params, sorter, filter) => {
@@ -96,6 +104,7 @@ const TableList: React.FC<unknown> = () => {
             success,
           };
         }}
+        // @ts-ignore
         columns={columns}
       />
     </PageContainer>
